@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2a8e9e;
+  --color-secondary: #e9f3f4;
+  --color-dark-blue: #180d39;
+  --color-dark-blue-2: #023347;
+  --color-dark-blue-3: #0b3a4f;
+  --color-dark: #1d1e20;
+  --font-helvetica-light: helveticaLight;
+  --font-helvetica: helvetica;
+  --font-helvetica-bold: helveticaBold;
+  --font-helvetica-medium: helveticaMedium;
+  --font-helvetica-compressed: helveticaCompressed;
+}
+
+@font-face {
+  font-family: helveticaLight;
+  src: url("assets/fonts/helvetica/helvetica-light.ttf");
+}
+@font-face {
+  font-family: helvetica;
+  src: url("assets/fonts/helvetica/Helvetica.otf");
+}
+@font-face {
+  font-family: helveticaBold;
+  src: url("assets/fonts/helvetica/Helvetica-Bold.otf");
+}
+@font-face {
+  font-family: helveticaMedium;
+  src: url("assets/fonts/helvetica/Helvetica-Medium.otf");
+}
+@font-face {
+  font-family: helveticaCompressed;
+  src: url("assets/fonts/helvetica/helvetica-compressed.otf");
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.float-in {
+  opacity: 0;
+  animation: floatIn 0.8s forwards;
+}
+
+.float-in-0 {
+  animation-delay: 0.1s;
+}
+.float-in-1 {
+  animation-delay: 0.4s;
+}
+.float-in-2 {
+  animation-delay: 0.7s;
+}
+.float-in-3 {
+  animation-delay: 1s;
+}
+.float-in-4 {
+  animation-delay: 1.3s;
+}
+.float-in-5 {
+  animation-delay: 1.6s;
+}
+.float-in-6 {
+  animation-delay: 1.9s;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
